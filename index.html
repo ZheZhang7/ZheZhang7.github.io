@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人主页</title>
+    <title>Zhe Zhang - Home</title>
     <style>
         * {
             padding: 0;
             margin: 0;
             list-style: none;
-            font-size: 15px;
-            font-family: PingFang SC, PingFang SC-Regular;
+            font-size: 17px;
         }
         body {
             height: 100vh;
+        }
+        .title {
+            font-size: 16px;
         }
         /* 顶部 */
         .wrapper {
@@ -48,41 +50,43 @@
         .content {
             display: flex;
             width: 48%;
-            margin: 5px auto 0px;
+            margin: 10px auto 0px;
             justify-content: space-between;
         }
         .content .main {
             display: flex;
             width: 100%;
         }
+        /* 内容区左侧 */
         .content .content-left {
             width: 70%;
+            padding-left: 10px;
         }
+
 
         /* 内容区右侧 */
         .content .content-right {
+            font-family: PingFang SC, PingFang SC-Regular;
             width: 30%;
         }
         .content .content-right > img {
-            margin-left: 20px;
             height: 200px;
         }
-        .content .content-right > img:hover {
+        .content .content-right > img:hover  {
             box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.13);
             transition: all 0.3s;
+            cursor: pointer;
         }
         .content .content-right .list {
             display: flex;
             align-items: center;
             margin: 5px 0px;
         }
-
         .content .content-right .list .listitem {
             width: 18px;
             width: 18px;
             height: 18px;
         }
-
         .content .content-right .list .listdesc {
             margin-left: 15px;
             font-size: 12px;
@@ -97,9 +101,9 @@
             <div class="header-right">
                 <ul class="header-list">
                     <li><a href="https://github.com/ZheZhang7/workLog">workLog</a></li>
-                    <li><a href="https://github.com/ZheZhang7/Python">Python</a></li>
-                    <li><a href="https://github.com/ZheZhang7/FrontEndProject">frontEndProject</a></li>
+                    <li><a href="https://github.com/ZheZhang7/FrontEndProject">Front-end Project</a></li>
                     <li><a href="https://github.com/ZheZhang7/NodeJS_API">NodeJS</a></li>
+                    <li><a href="https://github.com/ZheZhang7/Python">Python</a></li>
                 </ul>
             </div>
         </header>
@@ -108,7 +112,18 @@
     <div class="content">
         <div class="main">
             <div class="content-left">
-                123
+                <div class="top">
+                    <i class="title">Introduction</i>
+                </div>
+                <div class="middle">
+                    <i class="title">Skill</i>
+                </div>
+                <div class="middle">
+                    <i class="title">Experience</i>
+                </div>
+                <div class="footer">
+                    <i class="title">Publications</i>
+                </div>
             </div>
             <div class="content-right">
                 <img src="./reference/img/1.jpg" alt="photo">
@@ -125,12 +140,12 @@
                     <span class="listdesc">Front-end Development</span>
                 </div>
                 <div class="list">
-                    <img class="listitem" src="./reference/icon/zhihangzhuxizhici.png" alt="experience">
-                    <span class="listdesc">Chairman of the Student Union</span>
-                </div>
-                <div class="list">
                     <img class="listitem" src="./reference/icon/zhiyuanfuwu-01.png" alt="voluntary duties">
                     <span class="listdesc">Provincial Excellent Volunteer</span>
+                </div>
+                <div class="list">
+                    <img class="listitem" src="./reference/icon/zhihangzhuxizhici.png" alt="experience">
+                    <span class="listdesc">Chairman of the Student Union</span>
                 </div>
                 <div class="list">
                     <img class="listitem" src="./reference/icon/jiangxuejinzhongleiguanli.png" alt="scholarship">
