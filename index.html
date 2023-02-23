@@ -4,9 +4,145 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>个人主页</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            font-size: 15px;
+            font-family: PingFang SC, PingFang SC-Regular;
+        }
+        body {
+            height: 100vh;
+        }
+        /* 顶部 */
+        .wrapper {
+            width: 100%;
+            height: 6%;
+            box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.13); 
+            display: flex;
+        }
+        .wrapper header {
+            width: 50%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .wrapper header .header-left,.header-right {
+            display: flex;
+            align-items: center;
+        }
+        .wrapper header .header-right .header-list {
+            display: flex;
+            align-items: center;
+        }
+        .wrapper header .header-right .header-list li a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+        }
+
+        /* 内容区 */
+        .content {
+            display: flex;
+            width: 48%;
+            margin: 5px auto 0px;
+            justify-content: space-between;
+        }
+        .content .main {
+            display: flex;
+            width: 100%;
+        }
+        .content .content-left {
+            width: 70%;
+        }
+
+        /* 内容区右侧 */
+        .content .content-right {
+            width: 30%;
+        }
+        .content .content-right > img {
+            margin-left: 20px;
+            height: 200px;
+        }
+        .content .content-right > img:hover {
+            box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.13);
+            transition: all 0.3s;
+        }
+        .content .content-right .list {
+            display: flex;
+            align-items: center;
+            margin: 5px 0px;
+        }
+
+        .content .content-right .list .listitem {
+            width: 18px;
+            width: 18px;
+            height: 18px;
+        }
+
+        .content .content-right .list .listdesc {
+            margin-left: 15px;
+            font-size: 12px;
+            font-weight:500;
+        }
+    </style>
 </head>
 <body>
-    zhangzhe ge ren  zhu ye !
+    <div class="wrapper">
+        <header>
+            <div class="header-left" style="margin-left: 15px;">Zhe Zhang</div>
+            <div class="header-right">
+                <ul class="header-list">
+                    <li><a href="https://github.com/ZheZhang7/workLog">workLog</a></li>
+                    <li><a href="https://github.com/ZheZhang7/Python">Python</a></li>
+                    <li><a href="https://github.com/ZheZhang7/FrontEndProject">frontEndProject</a></li>
+                    <li><a href="https://github.com/ZheZhang7/NodeJS_API">NodeJS</a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+
+    <div class="content">
+        <div class="main">
+            <div class="content-left">
+                123
+            </div>
+            <div class="content-right">
+                <img src="./reference/img/1.jpg" alt="photo">
+                <div class="list">
+                    <img class="listitem" src="./reference/icon/xuexiao_xuexiaoxinxi.png" alt="school">
+                    <span class="listdesc">HRBUST</span>
+                </div>
+                <div class="list">
+                    <img class="listitem" src="./reference/icon/yanjiusheng.png" alt="profession">
+                    <span class="listdesc">Master of CST</span>
+                </div>
+                <div class="list">
+                    <img class="listitem" src="./reference/icon/zhiye.png" alt="occupation">
+                    <span class="listdesc">Front-end Development</span>
+                </div>
+                <div class="list">
+                    <img class="listitem" src="./reference/icon/zhihangzhuxizhici.png" alt="experience">
+                    <span class="listdesc">Chairman of the Student Union</span>
+                </div>
+                <div class="list">
+                    <img class="listitem" src="./reference/icon/weibiaoti--.png" alt="voluntary duties">
+                    <span class="listdesc">Provincial Excellent Volunteer</span>
+                </div>
+                <div class="list">
+                    <img class="listitem" src="./reference/icon/jiangxuejinzhongleiguanli.png" alt="scholarship">
+                    <span class="listdesc">8 times</span>
+                </div>
+                <div class="list">
+                    <img class="listitem" src="./reference/icon/youxiang.png" alt="email">
+                    <span class="listdesc">17603655621@163.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 </body>
 </html>
