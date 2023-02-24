@@ -9,14 +9,20 @@
         * {
             padding: 0;
             margin: 0;
-            list-style: none;
-            font-size: 17px;
+            font-size: 20px;
+            color: #555;
         }
         body {
             height: 100vh;
+            min-width: 1500px;
         }
         .title {
+            font-size: 18px;
+        }
+        .subtitle {
+            display: block;
             font-size: 16px;
+            margin: 10px 20px;
         }
         /* 顶部 */
         .wrapper {
@@ -26,11 +32,10 @@
             display: flex;
         }
         .wrapper header {
-            width: 50%;
+            width: 65%;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
-
         }
         .wrapper header .header-left,.header-right {
             display: flex;
@@ -39,35 +44,57 @@
         .wrapper header .header-right .header-list {
             display: flex;
             align-items: center;
+            list-style: none;
+            margin-right: 20px;
         }
         .wrapper header .header-right .header-list li a {
             margin: 0 15px;
             text-decoration: none;
-            color: black;
+            color: #999;
+            font-size: 16px;
+
+        }
+        .wrapper header .header-right .header-list li a:hover {
+            color: #555;
         }
 
         /* 内容区 */
         .content {
             display: flex;
-            width: 48%;
+            width: 65%;
             margin: 10px auto 0px;
             justify-content: space-between;
         }
         .content .main {
             display: flex;
             width: 100%;
+            padding: 0px 20px;
         }
         /* 内容区左侧 */
         .content .content-left {
-            width: 70%;
-            padding-left: 10px;
+            width: 75%;
+            padding: 0px 20px;
         }
 
+        .content .content-left .middle .skillcontent .skillcontentitem {
+            margin: 8px 0px;
+        }
+
+        .content .content-left .middle .skillcontent .skillcontentitem .skillcontentwrapper {
+            padding-left: 40px;
+        }
+
+        .content .content-left .middle .skillcontent .skillcontentitem .skillcontentwrapper li,b {
+            font-size: 14px;
+            padding: 4px 0px;
+        }
+        
 
         /* 内容区右侧 */
         .content .content-right {
-            font-family: PingFang SC, PingFang SC-Regular;
-            width: 30%;
+            /* font-family: PingFang SC, PingFang SC-Regular; */
+            width: 25%;
+            padding-left: 20px;
         }
         .content .content-right > img {
             height: 200px;
@@ -100,10 +127,10 @@
             <div class="header-left" style="margin-left: 15px;">Zhe Zhang</div>
             <div class="header-right">
                 <ul class="header-list">
-                    <li><a href="https://github.com/ZheZhang7/workLog">workLog</a></li>
-                    <li><a href="https://github.com/ZheZhang7/FrontEndProject">Front-end Project</a></li>
-                    <li><a href="https://github.com/ZheZhang7/NodeJS_API">NodeJS</a></li>
-                    <li><a href="https://github.com/ZheZhang7/Python">Python</a></li>
+                    <li><a href="https://github.com/ZheZhang7/workLog" target="_blank">workLog</a></li>
+                    <li><a href="https://github.com/ZheZhang7/FrontEndProject" target="_blank">Front-end Project</a></li>
+                    <li><a href="https://github.com/ZheZhang7/NodeJS_API" target="_blank">NodeJS</a></li>
+                    <li><a href="https://github.com/ZheZhang7/Python" target="_blank">Python</a></li>
                 </ul>
             </div>
         </header>
@@ -113,16 +140,49 @@
         <div class="main">
             <div class="content-left">
                 <div class="top">
-                    <i class="title">Introduction</i>
+                    <span class="title">Introduction</span>
                 </div>
                 <div class="middle">
-                    <i class="title">Skill</i>
+                    <span class="title">Skills</span>
+                    <!-- <h5 class="subtitle">Front-end</h5> -->
+                    <div class="skillcontent">
+                        <i class="skillcontentitem">
+                            <span class="subtitle">Front-end</span>
+                            <ul class="skillcontentwrapper">
+                                <li>Skilled use of <b>HTML(5) + CSS(3)</b>, to complete the complex layout</li>
+                                <li>Familiar with <b>JavaScript(ES6)</b>, have experience in using <b>Typescript</b>, and can complete interactive logic according to requirements</li>
+                                <li>Familiar with component development, Understand and master the framework <b>jQuery, React, Vue</b> and related ecology</li>
+                                <li>Understand <b>Webpack, Vite</b> front-end engineering tools</li>
+                                <li>Familiar with common layouts, dabbling in mobile, proficient in using <b>Less</b> and other preprocessors to help organize styles</li>
+                                <li>Familiar with mainstream tool libraries <b>Antd, ECharts, Axios, Bootstrap</b>, etc</li>
+                            </ul>
+                        </i>
+                        <i class="skillcontentitem">
+                            <span class="subtitle">Back-end</span>
+                            <ul class="skillcontentwrapper">
+                                <li>Skilled use of <b>HTML(5) + CSS(3)</b>, to complete the complex layout</li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </i>
+                        <i class="skillcontentitem">
+                            <span class="subtitle">Teamwork</span>
+                            <ul class="skillcontentwrapper">
+                                <li>Skilled use of <b>HTML(5) + CSS(3)</b>, to complete the complex layout</li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </i>
+                        
+                    </div>
                 </div>
                 <div class="middle">
-                    <i class="title">Experience</i>
+                    <span class="title">Experience</span>
                 </div>
                 <div class="footer">
-                    <i class="title">Publications</i>
+                    <span class="title">Publications</span>
                 </div>
             </div>
             <div class="content-right">
