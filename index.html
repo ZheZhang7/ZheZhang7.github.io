@@ -14,15 +14,16 @@
         }
         body {
             height: 100vh;
-            min-width: 1500px;
         }
         .title {
             font-size: 18px;
+            display: block;
+            margin-top: 20px;
         }
         .subtitle {
             display: block;
             font-size: 16px;
-            margin: 10px 20px;
+            margin: 20px 0px 10px 20px;
         }
         /* 顶部 */
         .wrapper {
@@ -84,9 +85,44 @@
             padding-left: 40px;
         }
 
+        .content .content-left .middle .skillcontent .skillcontentitem .skillcontentwrapper li:first-child {
+            padding-top: 0;
+        }
+
         .content .content-left .middle .skillcontent .skillcontentitem .skillcontentwrapper li,b {
             font-size: 14px;
             padding: 4px 0px;
+        }
+
+
+
+
+        .content .content-left .middle .experiencecontent .experiencetime {
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        .content .content-left .middle .experiencecontent .liability {
+            display: block;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        .content .content-left .middle .experiencecontent .experienceitem {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .content .content-left .middle .experiencecontent .experiencelist {
+            padding-left: 40px;
+            font-size: 14px;
+            display: block;
+        }
+
+        .content .content-left .middle .experiencecontent .experiencelist li {
+            font-size: 14px;
+            padding: 4px 0;
         }
         
 
@@ -144,7 +180,6 @@
                 </div>
                 <div class="middle">
                     <span class="title">Skills</span>
-                    <!-- <h5 class="subtitle">Front-end</h5> -->
                     <div class="skillcontent">
                         <i class="skillcontentitem">
                             <span class="subtitle">Front-end</span>
@@ -158,28 +193,54 @@
                             </ul>
                         </i>
                         <i class="skillcontentitem">
-                            <span class="subtitle">Back-end</span>
+                            <span class="subtitle">Back-end & Network</span>
                             <ul class="skillcontentwrapper">
-                                <li>Skilled use of <b>HTML(5) + CSS(3)</b>, to complete the complex layout</li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li>Have dabbled in both <b>Python</b> and <b>NodeJS</b>, and understand NodeJS's modular thinking</li>
+                                <li>Understand the <b>MySQL</b> database</li>
+                                <li>Familiar with <b>HTTP</b> protocol and common status codes, have a certain understanding of browser compatibility</li>
                             </ul>
                         </i>
                         <i class="skillcontentitem">
                             <span class="subtitle">Teamwork</span>
                             <ul class="skillcontentwrapper">
-                                <li>Skilled use of <b>HTML(5) + CSS(3)</b>, to complete the complex layout</li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li>Proficiency in using <b>Git</b>, able to practice <b>Git Flow</b> workflow</li>
+                                <li>Familiar with <b>ESlint</b> and other tools, willing to abide by various code specifications</li>
+                                <li>Understand front-end performance optimization, user experience, user needs</li>
+                                <li>Pursue elegant code and stable project structure, and ask to do our best to write high-quality code</li>
                             </ul>
                         </i>
                         
                     </div>
                 </div>
                 <div class="middle">
-                    <span class="title">Experience</span>
+                    <span class="title exp">Experience</span>
+                    <div class="experiencecontent">
+                        <i class="experienceitem">
+                            <b>
+                                <span class="experiencetime">2022.12~2023.3</span>
+                                <span class="experiencetime">ISCAS(中科院软件所-智能软件研发中心)</span>
+                                <span class="experiencetime">Front-end Development</span>
+                            </b>
+                            
+
+                        </i>
+                        
+                        <i class="subtitle">Work Responsibility</i>
+                        <i class="liability">
+                            The examination system project is mainly divided into administrator side, teacher side and student side. As a front-end development engineer in the team, mainly responsible for the construction of the page structure of the examination system, the layout of the UI diagram, the interface call, data rendering and visualization with the back-end. Learning workflow, code specification and design ideas.
+                        </i>
+                        <i class="subtitle">Technology Stack : TypeScript + Vue3 + Antd + ECharts</i>
+                        <i class="experiencelist">
+                            <ul>
+                                <li><b>Structural style</b>: According to the UI chart, HTML and CSS are used to build the page structure style with ANTD</li>
+                                <li><b>Functional interaction</b>: According to the requirements of the document, using TypeScript to complete the required interaction logic page</li>
+                                <li><b>Interface call</b>: Cooperate with the back-end engineer, send the request to the back-end through the front-end configuration</li>
+                                <li><b>Data rendering</b>: Render the data returned to the page to the page or cooperate with ECharts for data visualization</li>
+                                <li><b>Algorithm design</b>: Complete the labeling and line algorithm processing of the dry question</li>
+                            </ul>
+                        </i>
+                        
+                    </div>
                 </div>
                 <div class="footer">
                     <span class="title">Publications</span>
