@@ -77,6 +77,46 @@
             padding: 0px 20px;
         }
 
+        .content .content-left .top .introductioncontent {
+            padding-left: 20px;
+            margin: 20px 0;
+            display: block;
+        }
+
+        .content .content-left .top .introductioncontent .introductioncontenttext {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .content .content-left .top .introductioncontent .introductioncontentlist {
+            margin-left: 20px;
+        }
+
+        .content .content-left .top .introductioncontent .introductioncontentlist li {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .content .content-left .top .introductioncontent .introductioncontenttext a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #158CBA;
+        }
+
+        .content .content-left .top .introductioncontent .introductioncontentlist a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #158CBA;
+        }
+
+        .content .content-left .top .introductioncontent .introductioncontenttext a:hover {
+            text-decoration: underline;
+        }
+
+        .content .content-left .top .introductioncontent .introductioncontentlist a:hover {
+            text-decoration: underline;
+        }
+
         .content .content-left .middle .skillcontent .skillcontentitem {
             margin: 8px 0px;
         }
@@ -94,9 +134,6 @@
             padding: 4px 0px;
         }
 
-
-
-
         .content .content-left .middle .experiencecontent .experiencetime {
             margin-left: 20px;
             font-size: 14px;
@@ -109,7 +146,14 @@
         }
 
         .content .content-left .middle .experiencecontent .experienceitem {
+            width: 100%;
             margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .content .content-left .middle .experiencecontent .experienceitem b {
+            width: 100%;
             display: flex;
             justify-content: space-between;
         }
@@ -118,6 +162,10 @@
             padding-left: 40px;
             font-size: 14px;
             display: block;
+        }
+
+        .content .content-left .middle .experiencecontent .experiencelist ul {
+            margin-bottom: 40px;
         }
 
         .content .content-left .middle .experiencecontent .experiencelist li {
@@ -177,6 +225,18 @@
             <div class="content-left">
                 <div class="top">
                     <span class="title">Introduction</span>
+                    <i class="introductioncontent">
+                        <p class="introductioncontenttext">
+                            Greetings, I am a master student majoring in computer science and technology at <a href="http://www.hrbust.edu.cn/">HRBUST</a>. In the future, I want to engage in front-end development related work. The following are some of my experiences and knowledge.
+In addition, during my postgraduate study I achieved the following results:
+                        </p>
+                        <ul class="introductioncontentlist">
+                            <li>《Task recommendation Method for Fusion of Multi-view Social Relationship Learning and Reasoning
+                                in the Mobile Crowd Sensing System》 was accepted by<a href="https://www.sciencedirect.com/journal/computer-communications">《Computer Communications》</a>, pending publication</li>
+                            <li>The patent 《A Method for Social Relationship Reasoning and Task Assignment Oriented to Crowd Intelligence Sensing System》 entered the substantive review stage</li>
+                        </ul>
+
+                    </i>
                 </div>
                 <div class="middle">
                     <span class="title">Skills</span>
@@ -213,7 +273,7 @@
                     </div>
                 </div>
                 <div class="middle">
-                    <span class="title exp">Experience</span>
+                    <span class="title">Experience</span>
                     <div class="experiencecontent">
                         <i class="experienceitem">
                             <b>
@@ -221,10 +281,7 @@
                                 <span class="experiencetime">ISCAS(中科院软件所-智能软件研发中心)</span>
                                 <span class="experiencetime">Front-end Development</span>
                             </b>
-                            
-
                         </i>
-                        
                         <i class="subtitle">Work Responsibility</i>
                         <i class="liability">
                             The examination system project is mainly divided into administrator side, teacher side and student side. As a front-end development engineer in the team, mainly responsible for the construction of the page structure of the examination system, the layout of the UI diagram, the interface call, data rendering and visualization with the back-end. Learning workflow, code specification and design ideas.
@@ -242,9 +299,9 @@
                         
                     </div>
                 </div>
-                <div class="footer">
+                <!-- <div class="footer">
                     <span class="title">Publications</span>
-                </div>
+                </div> -->
             </div>
             <div class="content-right">
                 <img src="./reference/img/1.jpg" alt="photo">
